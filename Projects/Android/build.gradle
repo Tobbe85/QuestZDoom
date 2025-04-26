@@ -1,3 +1,12 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.0' // oder eine kompatible Version
+    }
+}
 apply plugin: 'com.android.application'
 apply from: "${rootProject.projectDir}/XrApp.gradle"
 
@@ -70,11 +79,6 @@ dependencies {
 
 repositories {
     google()
-}
-buildscript {
-    repositories {
-        google()
-    }
 }
 
 //tasks.register("prepareKotlinBuildScriptModel"){}

@@ -1,0 +1,4 @@
+rootProject.name = "QuestZDoom"
+
+include ':Android'
+project(':Android').projectDir = new File(settingsDir, 'Projects/Android')
